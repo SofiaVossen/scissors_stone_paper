@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/main.js" defer></script>
+		<script type="text/javascript" src="assets/js/confetti.js" defer></script>
+		<title>Schere Stein Papier</title>
+	</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+	<!-- ------------------------------------------DIV ROUNDS -->
+	<div id="rounds">
+		<h2>how many rounds?</h1>
+			<div>
+				<p id="outputRadio"></p>
+			</div>
+			<div>
+				<input type="radio" id="radio5" onchange="checkRounds()" name="radio" value="5">
+				<label for="radio">5</label>
+				<input type="radio" id="radio10" onchange="checkRounds()" name="radio" value="10">
+				<label for="radio">10</label>
+			</div>
+			<div>
+				<input type="radio" id="radio15" onchange="checkRounds()" name="radio" value="15">
+				<label for="radio">15</label>
+				<input type="radio" id="radio20" onchange="checkRounds()" name="radio" value="20">
+				<label for="radio">20</label>
+			</div>
+
+	</div>
+	<!-- ------------------------------------------DIV GAMER -->
+	<div id="gamer">
+		<div>
+			<p id="user">USER</p>
+			<p id="gamerCount">0</p>
+		</div>
+
+		<div id="ausgabe">
+			<div>
+				<p>Runden</p>
+				<div>
+					<p id="roundActiv">0</p>
+					<p>von</p>
+					<p id="roundsTotal">0</p>
+				</div>
+			</div>
+			<p id="outputText"></p>
+		</div>
+		<div>
+			<p id="comp">COMP</p>
+			<p id="compCount">0</p>
+		</div>
+	</div>
+	<!-- ------------------------------------------DIV GAME -->
+	<div id="game">
+		<p>Let's play</p>
+		<!-- <img src="" alt="rock">
+						<img src="" alt="paper">
+						<img src="" alt="scissors"> -->
+		<div id="gameSymbols">
+			<p id="scissors" onclick="playerChooseScissors()">✌️</p>
+			<p id="rock" onclick="playerChooseRock()">✊</p>
+			<p id="paper" onclick="playerChoosePaper()">🤚</p>
+		</div>
+		<p>MAKE YOUR MOVE</p>
+		<button id="restart" onclick="restart()">restart</button>
+	</div>
+</body>
+
+</html>
+
+<!-- DREHBUCH -->
+<!-- 1.html -->
+<!-- 2.grob css -->
+<!-- 3.java script -->
+<!-- 4.Details ausbessern -->
+<!-- PROJECT LEAD: Kevin -->

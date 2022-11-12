@@ -1,0 +1,76 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 5px 0;
+}
+
+/* html {
+	min-height: 100%;
+	min-width: 100%;
+} */
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	background-color: black;
+	color: white;
+	font-size: 1.2rem;
+}
+
+#rounds,
+#game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	border: 1px solid;
+	width: 50%;
+	padding: 5px;
+}
+
+#outputRadio {
+	color: red;
+}
+
+label {
+	margin: 0 15px 0 5px;
+}
+
+#gamer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	border: 1px solid;
+	width: 50%;
+	height: 120px;
+	padding: 5px;
+	text-align: center;
+}
+
+#ausgabe div div p {
+	display: inline-block;
+}
+
+#gameSymbols {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+}
+
+#gameSymbols p {
+	padding: 5px;
+	font-size: 3.5rem;
+	cursor: pointer;
+}
+
+#restart {
+	padding: 5px 15px;
+	border: none;
+	cursor: pointer;
+}
